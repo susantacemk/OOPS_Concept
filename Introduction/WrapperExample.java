@@ -28,6 +28,12 @@ public class WrapperExample {
         susanta.name = "Other Name"; // this is allowed because we are not changing the reference of the object
         System.out.println(susanta.name);
 
+        // lets talk about the finalize method
+        // A obj;
+        // for (int i = 0; i < 10000000; i++) {
+        // obj = new A("Susanta");
+        // }
+
     }
 
     static void swap(int a, int b) { // premitive type
@@ -53,5 +59,11 @@ public class WrapperExample {
             System.out.println("A class is created");
             this.name = name;
         }
+
+        // @Override
+        // protected void finalize() throws Throwable {
+        // System.out.println("A class is destroyed");
+        // super.finalize();
+        // }
     }
 }
